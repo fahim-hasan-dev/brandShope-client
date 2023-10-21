@@ -30,13 +30,23 @@ const Cart = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        setProducts(LoadProducts.filter(product => product.name != name))
+        
         console.log(data);
-        Swal.fire(
-          'Deleted!',
-          'The product has been deleted.',
-          'success'
-        )
+        if(data.deletedCount){
+          setProducts(LoadProducts.filter(product => product.name != name))
+          Swal.fire(
+            'Deleted!',
+            'The product has been deleted.',
+            'success'
+          )
+        }else if(data.deletedCount==0){
+          Swal.fire(
+            'sorry!',
+            'The product no deleted. try again',
+            'error'
+          )
+        }
+        
       });
       }
     })

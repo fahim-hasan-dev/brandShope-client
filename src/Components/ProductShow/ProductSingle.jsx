@@ -14,12 +14,12 @@ const ProductSingle = ({ product }) => {
     return (
         <div>
             
-            <div style={sadow} className="grid grid-cols-5 bg-white dark:bg-gray-300  gap-3 rounded-lg py-6 px-4 mb-5">
-                <div className="col-span-2">
+            <div style={sadow} className="grid lg:grid-cols-5 grid-cols-1 bg-white dark:bg-gray-300  gap-3 rounded-lg py-6 px-4 mb-5">
+                <div className="lg:col-span-2">
                     <img className="h-[250px] w-full" src={imageUrl} alt="Movie" />
                 </div>
 
-                <div className="col-span-3">
+                <div className="lg:col-span-3">
                     <h2 className="text-2xl mb-3 font-medium text-purple-700">{name}</h2>
                     <div className="flex justify-between mb-3 text-base font-bold text-gray-500">
                         <p>Brand Name: <span className="text-purple-700">{brandName}</span></p>

@@ -70,12 +70,12 @@ const Header = () => {
                                 }
 
 
-                                <Link onClick={logOutHandle} className="px-4 py-[6px] w-26 h-9 text-white font-medium bg-purple-700 rounded-full">Log Out</Link>
+                                <Link onClick={logOutHandle} className="md:px-4 px-2 h-7 md:h-9 py-1 text-sm md:text-base md:py-[6px] bg-purple-700 rounded-full font-medium text-white">Log Out</Link>
                                 <Dark></Dark>
                             </div>
-                                : <div className="flex text-base font-medium text-white gap-5">
-                                    <Link to='/signup' className="px-4 py-[6px] bg-purple-700 rounded-full">Register</Link>
-                                    <Link to='/login' className="px-4 py-[6px] bg-purple-700 rounded-full">Sign In</Link>
+                                : <div className="flex items-center text-base font-medium text-white gap-2 md:gap-5">
+                                    <Link to='/signup' className="md:px-4 px-2 h-7 md:h-9 py-1 text-sm md:text-base md:py-[6px] bg-purple-700 rounded-full">Register</Link>
+                                    <Link to='/login' className="md:px-4 px-2 h-7 md:h-9 py-1 text-sm md:text-base md:py-[6px] bg-purple-700 rounded-full">Sign In</Link>
                                     <Dark></Dark>
                                 </div>
                         }

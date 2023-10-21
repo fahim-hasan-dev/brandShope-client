@@ -9,7 +9,6 @@ const ProductDetails = () => {
     useEffect(() => {
         setProduct(LoadProduct)
     }, [LoadProduct])
-    console.log(product)
     const { name, imageUrl, brandName, productType, price, rating, description, }=product;
     const addCartHandle = ()=>{
         fetch('https://brand-shope.vercel.app/cart',{

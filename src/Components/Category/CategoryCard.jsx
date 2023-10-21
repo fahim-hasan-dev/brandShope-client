@@ -9,7 +9,7 @@ const CategoryCard = ({ category }) => {
     }
     return (
         <Link to={`/products/${categoryName?.toLowerCase()}`}>
-            <div style={style} className="card  mb-5 w-96 relative shadow-xl ">
+            <div style={style} className="card  mb-5  relative shadow-xl ">
                 <div className="absolute rounded-xl top-0 left-0 h-full w-full bg-[#1d1d1d8a]"></div>
                 <div className="card-body relative z-40">
                     <h2 className=" text-3xl font-bold text-purple-600 pt-24">{categoryName}</h2>
